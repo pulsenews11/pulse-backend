@@ -1,0 +1,12 @@
+[build]
+builder = "nixpacks"
+
+[deploy]
+startCommand = "node src/server.js"
+healthcheckPath = "/api/health"
+healthcheckTimeout = 5
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3
+
+[[services]]
+name = "pulse-api"
