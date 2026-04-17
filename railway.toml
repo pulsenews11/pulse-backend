@@ -1,0 +1,11 @@
+# Pulse News Backend — Environment Variables
+# Add these in Railway dashboard → Variables tab
+
+PORT=3000
+NODE_ENV=production
+
+# News API (get from https://newsapi.org/register) — optional, mock data used if missing
+NEWS_API_KEY=
+
+# OpenAI (get from https://platform.openai.com/api-keys) — optional, raw description used if missing
+OPENAI_API_KEY=
